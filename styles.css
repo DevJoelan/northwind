@@ -320,6 +320,117 @@ ul { list-style: none; }
   color: var(--text-soft);
 }
 
+/* ── LIVERIES ───────────────────────────────────────────── */
+.livery-slider {
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+}
+
+.livery-slider-media {
+  position: relative;
+  min-height: 620px;
+}
+
+.livery-slide {
+  display: none;
+  position: relative;
+}
+
+.livery-slide.is-active {
+  display: block;
+}
+
+.livery-slide img {
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+}
+
+.livery-slide-meta {
+  position: absolute;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  max-width: min(460px, calc(100% - 3rem));
+  background: rgba(15, 17, 20, 0.84);
+  border: 1px solid var(--border-hi);
+  padding: 1.2rem 1.25rem;
+}
+
+.livery-tag {
+  display: inline-block;
+  margin-bottom: 0.45rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--blue-light);
+}
+
+.livery-slide-meta h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  margin-bottom: 0.45rem;
+}
+
+.livery-slide-meta p {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+.livery-slider-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.livery-control {
+  min-width: 112px;
+  padding: 0.7rem 1rem;
+  background: transparent;
+  border: 1px solid var(--border-hi);
+  color: var(--text);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 0.92rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.livery-control:hover {
+  border-color: var(--blue);
+  background: rgba(63, 167, 245, 0.08);
+  color: var(--blue-light);
+}
+
+.livery-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+}
+
+.livery-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 1px solid var(--border-hi);
+  background: transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+}
+
+.livery-dot.is-active {
+  background: var(--blue);
+  border-color: var(--blue);
+  transform: scale(1.05);
+}
+
 /* ── LEAGUES ────────────────────────────────────────────── */
 .leagues-grid {
   display: grid;
@@ -656,6 +767,8 @@ ul { list-style: none; }
   .about-grid { grid-template-columns: 1fr; }
   .about-lead h2 { position: static; }
   .pillars { grid-template-columns: repeat(2, 1fr); }
+  .livery-slider-media { min-height: 520px; }
+  .livery-slide img { height: 520px; }
   .results-row { grid-template-columns: repeat(2, 1fr); }
 }
 
@@ -691,6 +804,14 @@ ul { list-style: none; }
 
   .hero-logo { width: min(400px, 100%); }
 
+  .livery-slider-controls {
+    flex-direction: column;
+  }
+
+  .livery-control {
+    width: 100%;
+  }
+
   .leagues-grid,
   .sponsors-grid,
   .socials-grid { grid-template-columns: 1fr; }
@@ -703,4 +824,13 @@ ul { list-style: none; }
   .hero { min-height: 54vh; }
   .hero-stats { flex-direction: column; align-items: flex-start; gap: 1rem; }
   .hstat-div { display: none; }
+  .livery-slider-media { min-height: 360px; }
+  .livery-slide img { height: 360px; }
+  .livery-slide-meta {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+    max-width: none;
+    padding: 1rem;
+  }
 }

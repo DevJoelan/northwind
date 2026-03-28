@@ -36,3 +36,54 @@ links.querySelectorAll('a').forEach((a) => {
     toggle.setAttribute('aria-expanded', 'false');
   });
 });
+
+/* ─── Livery slider ───────────────────────────────────── */
+const liverySlider = document.querySelector('[data-livery-slider]');
+
+if (liverySlider) {
+  const slides = Array.from(liverySlider.querySelectorAll('[data-slide]'));
+  const dots = Array.from(liverySlider.querySelectorAll('[data-slide-dot]'));
+  const prevButton = liverySlider.querySelector('[data-slide-prev]');
+  const nextButton = liverySlider.querySelector('[data-slide-next]');
+  let activeIndex = 0;
+  let autoplayId;
+
+  const showSlide = (index) => {
+    activeIndex = (index + slides.length) % slides.length;
+
+    slides.forEach((slide, slideIndex) => {
+      slide.classList.toggle('is-active', slideIndex === activeIndex);
+    });
+
+    dots.forEach((dot, dotIndex) => {
+      dot.classList.toggle('is-active', dotIndex === activeIndex);
+    });
+  };
+
+  const restartAutoplay = () => {
+    window.clearInterval(autoplayId);
+    autoplayId = window.setInterval(() => {
+      showSlide(activeIndex + 1);
+    }, 5000);
+  };
+
+  prevButton?.addEventListener('click', () => {
+    showSlide(activeIndex - 1);
+    restartAutoplay();
+  });
+
+  nextButton?.addEventListener('click', () => {
+    showSlide(activeIndex + 1);
+    restartAutoplay();
+  });
+
+  dots.forEach((dot, dotIndex) => {
+    dot.addEventListener('click', () => {
+      showSlide(dotIndex);
+      restartAutoplay();
+    });
+  });
+
+  showSlide(0);
+  restartAutoplay();
+}
