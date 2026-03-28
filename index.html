@@ -4,36 +4,326 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Northwind Motorsports</title>
-  <meta name="description" content="Northwind Motorsports iRacing team." />
+  <meta name="description" content="Northwind Motorsports — Australian iRacing team. League racing, endurance events, and a team built on racecraft." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Barlow+Condensed:wght@500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="index.css" />
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V81Q6YPQ7H"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-V81Q6YPQ7H');
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Barlow+Condensed:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="site-texture" aria-hidden="true"></div>
 
-  <main class="coming-soon-container">
-    <div class="coming-soon-content">
-      <img class="coming-soon-logo" src="images/northwind_no_background.png" alt="Northwind Motorsports" />
-      
-      <h1>Coming Soon</h1>
-      
-      <p class="tagline">Northwind Motorsports is preparing to take the grid.</p>
+  <!-- ─── NAV ───────────────────────────────────────────── -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner container">
+      <a href="#top" class="nav-logo">
+        <img src="images/northwind_no_background.png" alt="Northwind Motorsports" />
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#leagues">Leagues</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#socials" class="nav-cta">Connect</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <footer class="coming-soon-footer">
-      <p>&copy; 2026 Northwind Motorsports. Precision. Consistency. Performance.</p>
-    </footer>
+  <!-- ─── HERO ──────────────────────────────────────────── -->
+  <header class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-scanline" aria-hidden="true"></div>
+    <div class="container hero-content">
+      <div class="hero-text reveal">
+        <span class="eyebrow">Australian iRacing Team</span>
+        <img class="hero-logo" src="images/northwind_no_background.png" alt="Northwind Motorsports" />
+      </div>
+      <div class="hero-stats reveal reveal-delay">
+        <div class="hstat">
+          <span class="hstat-value">AUS</span>
+          <span class="hstat-label">Based</span>
+        </div>
+        <div class="hstat-div" aria-hidden="true"></div>
+        <div class="hstat">
+          <span class="hstat-value">League &amp; Endurance</span>
+          <span class="hstat-label">Focus</span>
+        </div>
+      </div>
+      <div class="hero-accent" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ─── ABOUT ─────────────────────────────────────────── -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-label reveal">About the Team</div>
+        <div class="about-grid">
+          <div class="about-lead reveal">
+            <h2>Built on racecraft.<br />Driven by culture.</h2>
+          </div>
+          <div class="about-body">
+            <p class="reveal">
+              Northwind Motorsports is an Australian-based sim racing team built on a shared passion for competitive iRacing, with a strong focus on league racing and endurance events. What started as a few mates jumping into sessions for a laugh has grown into a structured, driven team that takes pride in both performance and culture. We're here to compete properly — but we never lose that grounded, Aussie attitude that makes it all enjoyable.
+            </p>
+            <p class="reveal">
+              At our core, Northwind Motorsports is about teamwork. Anyone can hotlap, but league racing and endurance events are a different beast altogether. That's where consistency, racecraft, and communication come into play. We put a big emphasis on driving smart, keeping it clean, and making the right calls over the course of a race — whether it's a 30-minute sprint or a multi-hour endurance grind.
+            </p>
+            <p class="reveal">
+              Endurance racing is where we really come into our own. Driver swaps, fuel strategy, tyre management — it's all part of the challenge, and we treat it seriously. Every stint matters, and every driver plays a role. We work together behind the scenes with shared setups, practice sessions, and race prep so that when it comes time to grid up, everyone knows their job and can deliver.
+            </p>
+            <p class="reveal">
+              We compete across a range of organised iRacing leagues and special events, always aiming to represent Northwind Motorsports with professionalism and respect. That means racing hard but fair, avoiding unnecessary risks, and showing the kind of discipline that gets results over the long run. We're not just chasing podiums — we're building a reputation as a team that's consistent, reliable, and tough to beat when it counts.
+            </p>
+            <p class="reveal">
+              Off the track, the environment stays relaxed and welcoming — proper Aussie style. There's always a bit of banter flying around in the Discord, but when it's time to race, everyone locks in. We back each other, help each other improve, and make sure no one's left figuring things out on their own.
+            </p>
+            <p class="reveal">
+              Northwind Motorsports isn't just about turning laps — it's about building a team where drivers can grow, compete at a high level, and enjoy the journey. Whether you're chasing championships or just keen to be part of something solid, there's a place here for drivers who are committed, respectful, and ready to put in the work.
+            </p>
+          </div>
+        </div>
+        <div class="pillars reveal">
+          <div class="pillar">
+            <span class="pillar-icon">◈</span>
+            <h3>Racecraft</h3>
+            <p>Smart, clean racing over flat-out aggression. Every lap counts.</p>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">◈</span>
+            <h3>Consistency</h3>
+            <p>Reliable, disciplined performance that builds a lasting reputation.</p>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">◈</span>
+            <h3>Culture</h3>
+            <p>A grounded Aussie environment — serious when it matters, fun when it doesn't.</p>
+          </div>
+          <div class="pillar">
+            <span class="pillar-icon">◈</span>
+            <h3>Endurance</h3>
+            <p>Driver swaps, fuel strategy, tyre management — done properly.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── LEAGUES ────────────────────────────────────────── -->
+    <section class="section leagues" id="leagues">
+      <div class="container">
+        <div class="section-label reveal">Where We Race</div>
+        <h2 class="section-title reveal">Leagues &amp; Series</h2>
+        <p class="section-sub reveal">Northwind competes across a range of organised iRacing leagues and special events.</p>
+        <h3 class="section-title reveal">GSRC 2026B</h3>
+        <p class="reveal">We are a club filled with racers of all abilities in a range of different cars and racing formats. Based on the iRacing platform, our league feature's 14 championships and many weekend special events and hosted non-championship races.
+With select races broadcast and over 450 paid members. <span><a href="https://race.tgsrci.com/" style="color: #6cc4ff;"> Join GSRC</a></span></p>
+
+        <div class="leagues-grid">
+
+          <article class="league-card reveal">
+            <div class="league-badge">GT3</div>
+            <h3>Waste Options GT3 Series</h3>
+            <p>Competitvive door to door manufacturer racing series.</p>
+            <ul>
+              <li>Monday nights</li>
+              <li>Open Setups</li>
+              <li>Pro, Pro/AM, AM splits</li>
+            </ul>
+          </article>
+          <article class="league-card reveal">
+            <div class="league-badge">T86</div>
+            <h3>Toyota GR86 Challenge Series</h3>
+            <p>GSRC continuing the Supercar Support series with a club favourite.</p>
+            <ul>
+              <li>Wednesday nights</li>
+            </ul>
+          </article>
+          <article class="league-card reveal">
+            <div class="league-badge">Porsche</div>
+            <h3>GSRC Porsche Cup</h3>
+            <p>Sprint racing in the 922.2 Porsche cup car.</p>
+            <ul>
+              <li>Thursday nights</li>
+              <li>Open Setups</li>
+              <li>Elite/Open Split</li>
+            </ul>
+          </article>
+          <article class="league-card reveal">
+            <div class="league-badge">END</div>
+            <h3>Gentlemen's Endurance Championship</h3>
+            <p>Multiclass endurance racing making it's return to GSRC.</p>
+            <ul>
+              <li>Friday nights</li>
+              <li>Class 1 - LMH/GTP, Class 2 - GTE</li>
+              <li>60, 90, 120 min races</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── RESULTS ────────────────────────────────────────── -->
+    <section class="section results" id="results">
+      <div class="container">
+        <div class="section-label reveal">Performance</div>
+        <h2 class="section-title reveal">Wins &amp; Championships</h2>
+        <p class="section-sub reveal">Track record built through consistent performance, not luck.</p>
+        <h3 class="section-title reveal">2026 - Individual</h3>
+        <div class="accolades">
+          <article class="accolade reveal">
+            <span class="accolade-icon">1st</span>
+            <div>
+              <h4>GSRC — 2026A Porsche Amateur Cup - Jordan D </h4>
+              <p>Dominant season-long campaign, including a triple back to back win from rounds 7 through to 9. Consistency was on show, with only three rounds not on the podium. </p>
+            </div>
+          </article>
+          <article class="accolade reveal">
+            <span class="accolade-icon">2nd</span>
+            <div>
+              <h4>GSRC — 2026A Porsche Amateur Cup - Cameron D</h4>
+              <p>Strong performance throughout the season, with standouts including a photo finish at Daytona and blistering pace at Sebring and Adelaide.</p>
+            </div>
+          </article>
+          <article class="accolade reveal">
+            <span class="accolade-icon">2nd</span>
+            <div>
+              <h4>GSRC — 2026A Porsche Open Cup - Cooper F</h4>
+              <p> A slow start, turned into a championship content. Demonstrated towards the end of the season the talent and determination required to win rounds. With round wins at Miami and Phillip Island. </p>
+            </div>
+          </article>
+        </div>
+        <h3 class="section-title reveal" style="margin-top:48px">2026 - Team</h3>
+        <div class="accolades">
+          <article class="accolade reveal">
+            <span class="accolade-icon">1st</span>
+            <div>
+              <h4>GSRC — 2026A Porsche Cup Team - Jordan D & Cameron D</h4>
+              <p>Finishing 1st, and 2nd respectively in Porsche Amateur allowed us to guarantee first position in the teams championship.</p>
+            </div>
+          </article>
+          </article>
+            <article class="accolade reveal">
+            <span class="accolade-icon">3rd</span>
+            <div>
+              <h4>GSRC — 2026A Porsche Cup Team - Cooper F & Jason W</h4>
+              <p>Finishing 2nd, and 4th in Porsche Open resulted in a 3rd place finish in the teams championship. 2nd place just being out of reach.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── SPONSORS ───────────────────────────────────────── -->
+    <section class="section sponsors" id="sponsors">
+      <div class="container">
+        <div class="section-label reveal">Partners &amp; Family</div>
+        <h2 class="section-title reveal">Our Sponsors</h2>
+        <p class="section-sub reveal">Northwind is proudly supported by family businesses and partners who share our values.</p>
+        <div class="sponsors-grid">
+          <div class="sponsor-card reveal">
+            <img src="images/logo1.png" alt="Sponsor logo" class="sponsor-logo" />
+            <div class="sponsor-text">
+              <h3>BCMG</h3>
+              <p>BCMG is a construction and maintenance company specialising in rebuilds, leak detection, and defect rectification for builders and insurance works. We focus on finding the real problem and fixing it properly the first time.</p>
+            </div>
+          </div>
+          <div class="sponsor-card reveal" style="cursor: pointer;" onclick="window.open('https://www.gigisclaycreations.au/', '_blank')">
+            <img src="images/logo2.jpg" alt="Sponsor logo" class="sponsor-logo" />
+            <div class="sponsor-text" >
+              <h3>Gigis Clay Creations </h3>
+              <p>Established in 2025, Gigi’s is a one woman band! Specialising in handmade, polymer clay earrings. Hoping to bring a little bit of brightness to your day, one earring at a time!</p>
+            </div>
+          </div>
+          <div class="sponsor-card reveal" style="cursor: pointer;" onclick="window.open('https://kdakincreations.com/', '_blank')">
+            <img src="images/logo3.png" alt="Sponsor logo" class="sponsor-logo" />
+            <div class="sponsor-text">
+              <h3>KDakin Creations</h3>
+              <p>KDakin Creations — a family-run small business specialising in beautifully handcrafted personalised goods made with love, care, and creativity.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <h2 class="section-title reveal">Our Affiliates</h2>
+        <p class="section-sub reveal">Northwind is supported by the following affiliates.</p>
+        <div class="sponsors-grid2">
+
+          <div class="sponsor-card reveal">
+                      
+            <img src="images/rogue-energy.png" style="margin-top: auto; margin-bottom: auto;" alt="Sponsor logo" class="sponsor-logo" />
+            <div class="sponsor-text">
+              <h3>Rogue Energy</h3>
+              <p><a href="https://rogueenergy.com/BrooklynBRacing">Click here for 10% off</a>
+            </div>
+          </div>
+
+          <div class="sponsor-card reveal">
+            <img src="images/track-racer.png" alt="Sponsor logo" class="sponsor-logo" />
+            <div class="sponsor-text">
+              <h3>Trak Racer</h3>
+              <p><a href="https://trakracer.com.au/?ref=BrooklynAUS">Click here</a></p>
+              </div>
+          </div>
+        </div>
+        <p class="sponsor-note reveal">Interested in partnering with Northwind Motorsports? <a href="#socials">Get in touch.</a></p>
+      </div>
+    </section>
+
+    <!-- ─── SOCIALS / CONNECT ──────────────────────────────── -->
+    <section class="section socials-section" id="socials">
+      <div class="container">
+        <div class="section-label reveal">Community</div>
+        <h2 class="section-title reveal">Connect With The Team</h2>
+        <p class="section-sub reveal">Follow our journey, watch the action, and join the conversation.</p>
+        <div class="socials-grid">
+          <a href="https://www.instagram.com/northwindmotorsports" target="_blank" rel="noreferrer" class="social-card reveal">
+            <div class="social-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </div>
+            <h3>Instagram</h3>
+            <p>@northwindmotorsports</p>
+          </a>
+          <a href="https://www.facebook.com/people/Northwind-Motorsports/61586087781871/" target="_blank" rel="noreferrer" class="social-card reveal">
+            <div class="social-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </div>
+            <h3>Facebook</h3>
+            <p>Northwind Motorsports</p>
+          </a>
+          <a href="https://discord.gg/qR3W6rkG" target="_blank" rel="noreferrer" class="social-card reveal">
+            <div class="social-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 2H7a2 2 0 0 0-2 2v14l4-4h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/><line x1="10" y1="10" x2="10.01" y2="10"/><line x1="14" y1="10" x2="14.01" y2="10"/></svg>
+            </div>
+            <h3>Discord</h3>
+            <p>Northwind Motorsports Discord</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <!-- ─── FOOTER ────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <img src="images/northwind_no_background.png" alt="Northwind Motorsports" />
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#leagues">Leagues</a>
+        <a href="#results">Results</a>
+        <a href="#sponsors">Sponsors</a>
+        <a href="#socials">Connect</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Northwind Motorsports. Built for racecraft. Tuned for consistency.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
